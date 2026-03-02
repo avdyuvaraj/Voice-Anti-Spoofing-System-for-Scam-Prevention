@@ -1,116 +1,116 @@
-🎙️ Voice Anti-Spoofing System for Scam Prevention
-📌 Overview
+# 🎙️ Voice Anti-Spoofing System for Scam Prevention
 
-This project is a Voice Anti-Spoofing System designed to detect whether an audio input is from a real human speaker or a spoofed/fake source (such as AI-generated voice, replay attack, or manipulated audio).
+## 🔎 Overview
 
-The goal is to prevent voice-based scams, fraud calls, and identity impersonation attacks.
+A Machine Learning-based system designed to detect spoofed or fake voice samples and prevent voice-based scam attacks.
 
-🚨 Problem Statement
+This project focuses on identifying AI-generated voices, replay attacks, and manipulated audio used in fraud and impersonation scenarios.
 
-With the rise of:
+With the rise of voice cloning and deepfake technologies, secure voice authentication has become critical. This system acts as a defensive layer against such threats.
 
-AI voice cloning
+---
 
-Deepfake audio
+## 🚨 Problem Statement
 
-Replay attacks
+Voice scams are increasing due to:
 
-Social engineering scams
+- AI voice cloning
+- Deepfake audio generation
+- Replay attacks
+- Social engineering fraud
 
-Voice authentication systems are becoming vulnerable.
+Traditional voice authentication systems cannot reliably distinguish between genuine and spoofed audio.
 
-This system helps detect fake or spoofed voice samples before they are trusted.
+This system classifies voice input as:
 
-🧠 How It Works
+- ✅ Genuine Voice
+- ❌ Spoofed / Fake Voice
 
-User provides a voice audio input.
+---
 
-The system extracts audio features.
+## 🧠 Technical Approach
 
-A trained machine learning / deep learning model analyzes the features.
+1. Audio input is collected from the user.
+2. Feature extraction is performed using audio processing techniques (e.g., MFCC).
+3. Extracted features are passed into a trained ML/DL model.
+4. The model predicts whether the input is real or spoofed.
 
-The model classifies the input as:
+The system detects subtle acoustic differences between human and synthetic audio.
 
-✅ Genuine Voice
+---
 
-❌ Spoofed / Fake Voice
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+- Python
+- Librosa (Audio Feature Extraction)
+- NumPy
+- Scikit-learn / TensorFlow
+- Machine Learning Classification Models
 
-Python
+---
 
-Machine Learning / Deep Learning
+## 📂 Project Structure
 
-Audio processing libraries
+    Voice-Anti-Spoofing-System/
+    │
+    ├── model/                 # Trained model files
+    ├── app.py                 # Main application
+    ├── requirements.txt       # Dependencies
+    ├── README.md
+    └── .gitignore
 
-NumPy
+---
 
-Librosa
+## ⚙️ Installation & Setup
 
-Scikit-learn / TensorFlow (depending on your implementation)
+### 1. Clone the Repository
 
-📂 Project Structure
-Voice-Anti-Spoofing-System/
-│
-├── model/                 # Trained model files
-├── app.py                 # Main application file
-├── requirements.txt       # Dependencies
-├── README.md
-└── .gitignore
+    git clone https://github.com/avdyuvaraj/Voice-Anti-Spoofing-System-for-Scam-Prevention.git
+    cd Voice-Anti-Spoofing-System-for-Scam-Prevention
 
-⚙️ Installation
-1️⃣ Clone the Repository
-git clone https://github.com/avdyuvaraj/Voice-Anti-Spoofing-System-for-Scam-Prevention.git
-cd Voice-Anti-Spoofing-System-for-Scam-Prevention
+### 2. Create Virtual Environment (Recommended)
 
-2️⃣ Create Virtual Environment (Recommended)
-python -m venv venv
-venv\Scripts\activate
+    python -m venv venv
+    venv\Scripts\activate
 
-3️⃣ Install Dependencies
-pip install -r requirements.txt
+### 3. Install Dependencies
 
-▶️ Run the Application
-python app.py
+    pip install -r requirements.txt
 
-Upload or provide a voice sample and the system will classify it.
+---
 
-🎯 Applications
+## ▶️ Run the Application
 
-Banking voice verification systems
+    python app.py
 
-Call center fraud detection
+Provide a voice sample and the system will classify it as genuine or spoofed.
 
-Telecom scam prevention
 
-Secure voice-based authentication
+## 🔐 Cybersecurity Relevance
 
-Government helpline protection systems
+This project demonstrates:
 
-🔐 Security Relevance
+- Biometric authentication security
+- Fraud detection techniques
+- Defense against social engineering attacks
+- AI-based threat detection mechanisms
 
-This project is relevant in cybersecurity for:
+It showcases the integration of Machine Learning and Cybersecurity in a real-world application.
 
-Preventing social engineering attacks
+---
 
-Detecting voice-based impersonation
+## 🚀 Future Improvements
 
-Improving biometric authentication systems
+- Real-time voice streaming detection
+- API deployment for enterprise integration
+- Mobile application integration
+- Larger dataset training for improved accuracy
+- Cloud deployment for scalability
 
-📊 Future Improvements
+---
 
-Real-time detection support
+## 👨‍💻 Author
 
-Integration with mobile apps
-
-API deployment
-
-Cloud deployment for scalable detection
-
-Larger dataset training
-
-👨‍💻 Author
-
-Yuvaraj M
-Computer Science Engineering Student
+Yuvaraj M  
+Computer Science Engineering Student  
 Cybersecurity & AI Enthusiast

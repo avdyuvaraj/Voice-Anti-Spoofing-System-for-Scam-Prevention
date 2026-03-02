@@ -57,15 +57,19 @@ Voice-Anti-Spoofing-System/
 ├── requirements.txt       # Dependencies
 ├── README.md
 └── .gitignore
+
 ⚙️ Installation
 1️⃣ Clone the Repository
 git clone https://github.com/avdyuvaraj/Voice-Anti-Spoofing-System-for-Scam-Prevention.git
 cd Voice-Anti-Spoofing-System-for-Scam-Prevention
+
 2️⃣ Create Virtual Environment (Recommended)
 python -m venv venv
 venv\Scripts\activate
+
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+
 ▶️ Run the Application
 python app.py
 
